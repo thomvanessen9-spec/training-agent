@@ -58,7 +58,12 @@
   .workout-detail.open { display: block; }
   .detail-row { display: flex; gap: 6px; margin-top: 6px; }
   .detail-label { color: #999; min-width: 80px; }
-  .empty-state { font-size: 12px; color: #ccc; text-align: center; padding: 16px 0; }
+  .empty-state { font-size: 12px; color: #ccc; text-align: center; padding: 16px 0; }@media (max-width: 768px) {
+  body { flex-direction: column; height: auto; min-height: 100vh; }
+  .chat-panel { height: 60vh; }
+  .stats-panel { width: 100%; border-left: none; border-top: 1px solid #eee; }
+  .macro-grid { grid-template-columns: repeat(3, 1fr); }
+}
 </style>
 </head>
 <body>

@@ -9,9 +9,9 @@
   body { font-family: -apple-system, sans-serif; background: #f5f5f5; display: flex; height: 100vh; overflow: hidden; }
 
 @media (max-width: 768px) {
-  body { flex-direction: column; height: auto; min-height: 100vh; overflow-y: auto; }
-  .chat-panel { height: auto; min-height: 50vh; }
-  .chat-messages { height: 300px; overflow-y: auto; }
+  body { flex-direction: column; height: auto; min-height: 100vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .chat-panel { height: auto; min-height: auto; }
+  .chat-messages { height: auto; max-height: none; overflow-y: visible; }
   .stats-panel { width: 100%; border-left: none; border-top: 1px solid #eee; height: auto; overflow: visible; }
   .macro-grid { grid-template-columns: repeat(3, 1fr); }
 }
